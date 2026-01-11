@@ -10,12 +10,13 @@ public class Percentage
         om = sc.nextDouble();
         System.out.println( "Enter Maximum Marks(mm)");
         mm = sc.nextDouble();
-        percentage= om/mm*100;
+        if(om>mm){
+            System.out.println( "Obtained marks cannot be greater than maximum marks!");
+        }
+       else{ percentage= om/mm*100;
         System.out.println("The percentage is:");
-        System.out.println(percentage);
+        System.out.println(percentage);}
 
     }
 
-    
-    
 }
